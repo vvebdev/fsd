@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+}
+
+.button {
+  flex-shrink: 0;
+}

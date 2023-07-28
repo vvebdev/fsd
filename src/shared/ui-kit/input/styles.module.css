@@ -1,0 +1,11 @@
+.field {
+  width: 100%;
+  border: 2px solid gray;
+  padding: 8px;
+  height: 34px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1;
+  box-sizing: border-box;
+}
