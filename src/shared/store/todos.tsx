@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Todos } from '../api/todos';
+import { Todos } from '@/shared/api/todos';
 
 interface TodosState {
   todos: { id: number; title: string }[];

@@ -1,11 +1,11 @@
 import styles from './styles.module.css';
 
-interface PageTitleProps {
+interface TitleProps {
   children: React.ReactNode;
 }
 
-function PageTitle({ children }: PageTitleProps) {
+function Title({ children }: TitleProps) {
   return <h1 className={styles.regular}>{children}</h1>;
 }
 
-export default PageTitle;
+export default Title;

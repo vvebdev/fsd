@@ -1,6 +1,6 @@
 .regular {
   border: 2px solid gray;
-  background: gray;
+
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -9,6 +9,11 @@
   line-height: 1;
 }
 
+.regular:disabled {
+  background: gray;
+}
+
 .regular:not(:disabled) {
   cursor: pointer;
+  background: #029642;
 }
