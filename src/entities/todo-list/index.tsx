@@ -1,2 +1,2 @@
 export * from './ui/list';
-export { useTodos } from './models/store';
+export { useTodos } from './models/hook';
