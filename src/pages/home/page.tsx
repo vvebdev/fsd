@@ -1,15 +1,13 @@
 'use client';
-import { AddTodoForm } from '@/features/add-todo-form';
-import styles from './styles.module.css';
 import Title from '@/shared/ui-kit/title';
-import TodoList from '@/widgets/todo-list';
+import Todos from '@/widgets/todos';
+import styles from './styles.module.css';
 
 const Home = () => {
   return (
     <div className={styles.page}>
       <Title>TodoList home page</Title>
-      <AddTodoForm />
-      <TodoList />
+      <Todos />
     </div>
   );
 };

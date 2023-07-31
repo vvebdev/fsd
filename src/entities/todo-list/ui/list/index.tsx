@@ -1,8 +1,8 @@
 import styles from './styles.module.css';
-import Todo from '@/entities/todo';
-import { useTodos } from '@/shared/store/todos';
+import { Todo } from '../item';
+import { useTodos } from '../../models/store';
 
-function TodoList() {
+export const TodoList = () => {
   const todos = useTodos((state) => state.todos);
 
   return (
@@ -14,6 +14,4 @@ function TodoList() {
       ))}
     </ul>
   );
-}
-
-export default TodoList;
+};

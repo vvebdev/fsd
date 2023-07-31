@@ -1,15 +1,14 @@
+import { Card } from '@/shared/ui-kit/card';
 import styles from './style.module.css';
 
 interface TodoProps {
   title: string;
 }
 
-function Todo({ title }: TodoProps) {
+export const Todo = ({ title }: TodoProps) => {
   return (
-    <div className={styles.wrapper}>
+    <Card>
       <h3 className={styles.title}>{title}</h3>
-    </div>
+    </Card>
   );
-}
-
-export default Todo;
+};

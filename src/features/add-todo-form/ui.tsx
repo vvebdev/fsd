@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { useTodos } from '@/shared/store/todos';
+import { useTodos } from '@/entities/todo-list/models/store';
 import styles from './styles.module.css';
 import Button from '@/shared/ui-kit/button';
 import Input from '@/shared/ui-kit/input';

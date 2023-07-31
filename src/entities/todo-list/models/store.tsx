@@ -1,13 +1,13 @@
 import { create } from 'zustand';
-import { Todos } from '@/shared/api/todos';
+import { Todo } from './types';
 
 interface TodosState {
-  todos: { id: number; title: string }[];
+  todos: Todo[];
   add: (title: string) => void;
 }
 
 export const useTodos = create<TodosState>((set) => ({
-  todos: Todos,
+  todos: [],
   add: (title) =>
     set((state) => ({
       todos: [...state.todos, { id: state.todos.length + 1, title }],
