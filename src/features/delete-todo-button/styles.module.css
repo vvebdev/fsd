@@ -1,0 +1,16 @@
+.regular {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgb(200, 0, 0);
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}
+
+.regular:hover {
+  background: red;
+}

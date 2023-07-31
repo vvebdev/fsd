@@ -1,12 +1,12 @@
 'use client';
+import styles from './styles.module.css';
 import React, { useState } from 'react';
 import { useTodos } from '@/entities/todo-list';
-import styles from './styles.module.css';
 import Button from '@/shared/ui-kit/button';
 import Input from '@/shared/ui-kit/input';
 
 export const AddTodoForm = () => {
-  const { addTodo } = useTodos();
+  const addTodo = useTodos((state) => state.add);
   const [todoTitle, setTodoTitle] = useState('');
 
   const handleSubmitForm: React.FormEventHandler<HTMLFormElement> = (
