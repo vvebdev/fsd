@@ -8,7 +8,8 @@ import { Todo } from '@/entities/todo';
 import { DeleteTodoButton } from '@/features/delete-todo-button';
 
 function Todos() {
-  const todos = useTodos((state) => state.todos);
+  // const todos = useTodos((state) => state.todos);
+  const { todos } = useTodos();
   return (
     <>
       <AddTodoForm />

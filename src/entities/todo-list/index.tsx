@@ -1,3 +1,3 @@
 export * from './ui/list';
 export * from './ui/list-item';
-export { useTodos } from './models/store';
+export { useTodos } from './models/hook';

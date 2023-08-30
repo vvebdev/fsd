@@ -6,7 +6,8 @@ import Button from '@/shared/ui-kit/button';
 import Input from '@/shared/ui-kit/input';
 
 export const AddTodoForm = () => {
-  const addTodo = useTodos((state) => state.add);
+  // const addTodo = useTodos((state) => state.add);
+  const { addTodo } = useTodos();
   const [todoTitle, setTodoTitle] = useState('');
 
   const handleSubmitForm: React.FormEventHandler<HTMLFormElement> = (

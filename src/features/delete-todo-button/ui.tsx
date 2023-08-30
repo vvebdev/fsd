@@ -6,7 +6,8 @@ interface DeleteTodoButtonProps {
 }
 
 const DeleteTodoButton = ({ id }: DeleteTodoButtonProps) => {
-  const deleteTodo = useTodos((state) => state.delete);
+  // const deleteTodo = useTodos((state) => state.delete);
+  const { deleteTodo } = useTodos();
 
   return (
     <button className={styles.regular} onClick={() => deleteTodo(id)}>
